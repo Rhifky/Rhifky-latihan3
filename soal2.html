@@ -1,13 +1,12 @@
 <html>
 <head></head>
 <body>
-<script> type="text/javascripy">
-<!--
+<script> type="text/javascript">
 
 function hitung(){//fungsi hitung
 var bi11=paraseInt(document.form1.bi11.velue)//deklarasi variabel bi11 untuk menampung nilai dari inputan bi11 sebelumnya koma
 var bi12=paraseInt(document.form1.bi12.velue)//deklarasi variabel bi12 untuk menampung nilai dari inputan bi12 sebelumnya koma
-var opt=document.form1.operator.velue //dekelarasi variabel opt untuk menampung pilihan operator
+var opt=document.form1.operator.value //dekelarasi variabel opt untuk menampung pilihan operator
 
 if (opt=="tambah"){//melakukan kondisional dengan if
     var hasil = bi11+bil12 // dekelarasi hasil dari penjumlahan
@@ -24,7 +23,7 @@ if (opt=="bagi"){//melakukan kondisional dengan if
 document.form1.hasil.velue = hasil //menampilkan nilai hasil ke kolom input hasil
 }
 //--> </script>
-<form nama="form1" method="POST"
+<form nama="form1" method="POST">
     <p>Bilangan 1 : <input type="text" nama="bi11"></p>
     <p>Bilangan 2 : <input type="text" nama="bi12"></p>
     <p>Hasil : <input type="text" nama="hasil"></p>
