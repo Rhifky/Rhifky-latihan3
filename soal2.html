@@ -7,6 +7,35 @@
 function hitung(){//fungsi hitung
 var bi11=paraseInt(document.form1.bi11.velue)//deklarasi variabel bi11 untuk menampung nilai dari inputan bi11 sebelumnya koma
 var bi12=paraseInt(document.form1.bi12.velue)//deklarasi variabel bi12 untuk menampung nilai dari inputan bi12 sebelumnya koma
-var opt=document.
+var opt=document.form1.operator.velue //dekelarasi variabel opt untuk menampung pilihan operator
+
+if (opt=="tambah"){//melakukan kondisional dengan if
+    var hasil = bi11+bil12 // dekelarasi hasil dari penjumlahan
+}
+if (opt=="kurang"){//melakukan kondisional dengan if
+    var hasil = bi11-bil12 // dekelarasi hasil dari pengurangan
+}   
+if (opt=="kali"){//melakukan kondisional dengan if
+    var hasil = bi11*bil12 // dekelarasi hasil dari perkalian
+}
+if (opt=="bagi"){//melakukan kondisional dengan if
+    var hasil = bi11/bil12 // dekelarasi hasil dari pembagian
+}
+document.form1.hasil.velue = hasil //menampilkan nilai hasil ke kolom input hasil
+}
+//--> </script>
+<form nama="form1" method="POST"
+    <p>Bilangan 1 : <input type="text" nama="bi11"></p>
+    <p>Bilangan 2 : <input type="text" nama="bi12"></p>
+    <p>Hasil : <input type="text" nama="hasil"></p>
+    <p>pilihan operator : <select nama="operator"></p>
+        <option value="=tambah">+ (tambah)</option>
+        <option value="=tambah">- (kurang)</option>
+        <option value="=kali">* (kali)</option>
+        <option value="=bagi">/ +(bagi)()</option>
+    <select></p>
+    <input type="button" value="=" nama="htg" onclick = hitung()> <br>>br>
+    <input type="button" value="clear" onclick="document.form1.reset()">
+</form>    
 </body>    
 </html>
